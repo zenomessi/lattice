@@ -1,0 +1,20 @@
+# This is a comment!
+Link .60
+Rest 1.
+Radius 60.
+Force_M 3.
+Spring 256
+Myo .10
+Bend 1.
+Outer 10.
+Ratio 1.
+Persist 0.6
+AnchorRatio 0.99
+Matrix 2
+2. 1.
+0. 1.732050875688772
+# Matrix 2
+# 1. 0.5
+# 0. 0.8660254037844386
+Reference CR30_remove
+Cell /home/messi/Documents/Lattice/Contours/fake/circle_r30_600p.dat
