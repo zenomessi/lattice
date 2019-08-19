@@ -16,5 +16,5 @@ Matrix 2
 # Matrix 2
 # 1. 0.5
 # 0. 0.8660254037844386
-Reference CR30_remove
-Cell /home/messi/Documents/Lattice/Contours/fake/circle_r30_600p.dat
+Reference CR30
+Cell ./circle_r30_600p.dat

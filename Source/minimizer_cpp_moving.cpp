@@ -33,7 +33,7 @@ int main(int argc, char* argv[]){
 	cerr << "System created" << endl;
 	
 	//put the reference for the files in the pathname
-	pathname << "./";
+	pathname << "./Results/";
 	sys->ref(pathname);
 	
 	//indexes of each hinge
@@ -161,7 +161,6 @@ int main(int argc, char* argv[]){
 	cerr << "gradient " << gsl_blas_dnrm2(s->gradient) << endl;
 	ofile << gsl_blas_dnrm2(s->gradient) << endl;
 	ofile.close();
-	//minfile.close();
 	
 	//plot the final state
 	ofile.open(pathname.str()+"_state_final.dat", ofstream::out);
@@ -176,7 +175,6 @@ int main(int argc, char* argv[]){
 	
 	ofile.open(pathname.str()+"_positions_final.dat", ofstream::out);
 	cerr << "printing positions_final.dat" << endl;
-	//This is put in the file for the CGAL version
 	ofile << sys->get_points_size() << endl;
 	for(unsigned int i(0); i<sys->get_points_size(); i++){
 		ofile << sys->get_state(s->x, i, 0) << "\t" << sys->get_state(s->x, i, 1) << endl;
