@@ -6,9 +6,7 @@ Force_M 3.
 Spring 256
 Myo .10
 Bend 1.
-Outer 10.
 Ratio 1.
-Persist 0.6
 AnchorRatio 0.99
 Matrix 2
 2. 1.

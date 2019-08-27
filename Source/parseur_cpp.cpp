@@ -22,12 +22,10 @@ Parseur::Parseur(const string& param_file_n): ref("0"), cell_path("0"), var_1d(0
     this->liste["Cell"]=Zelle;
     this->liste["Spring"]=Spring;
     this->liste["Bend"]=Bend;
-    this->liste["Outer"]=Outer;
     this->liste["Myo"]=Myo;
     this->liste["AnchorRatio"]=AnchorRatio;
     this->liste["Force_M"]=FMagnitude;
     this->liste["Ratio"]=Ratio;
-    this->liste["Persist"]=Persist;
     this->liste["Matrix"]=Matrix;
     this->liste["Reference"]=Ref;
     this->liste["#"]=Comment;

@@ -37,14 +37,12 @@ along with the principal parameters of the run. Here's a short description of th
 
 * *boundpoints* list of the indices of the anchors, the index refers to the *positions* files.
 * *dipoles_debut* list of the initial positions of the dipoles, i.e. the positions of the pairs of points forming dipoles.
-* *dipoles_density* **enlever?** 
 * *dipoles_final* list of the final positions of the dipoles.
 * *dipoles_indexes* list of the indices of the points forming dipoles, the index refers to the *positions* files.
 * *forces* list of vectorial forces.
 * *forces_norms* list of the norms of the forces, each entry consists of 2 lines, first line the coordinates of the point of application of the force, the second line is the norm.
 * *gradients* list of the gradient of the energy of the system.
 * *hinges* list of the hinges of the system. Indices refer to *positions* files.
-* *network* **enlever**
 * *outpoints* list of positions of the anchors.
 * *positions_debut* list of the initial positions of the nodes. The list follows the indexing of the nodes during the run.
 * *positions_final* list of the final positions of the nodes. The list follows the indexing of the nodes during the run.
