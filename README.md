@@ -1,23 +1,32 @@
 This program is created to implement a model of cell cytoskeleton.
-The text here is a simple explanation of how to run the program **lattice**
-with the provided parameter file *param.dat* with an explanation of each fields and
-their range.
+This file conatins a simple explanation of how to run the program **lattice**.
+
+
+To compile the program, open a terminal and run the command:
+
+$ make lattice
+
+Then to run the program run the command:
+
+$ ./lattice ./param.dat
+
+param.dat is the provided parameter file. Follows an explanation of each fields and their range.
 
 **Fields:**
-*Link* is the network density. Range [0.5,1.0].
-*Rest* is the rest length of the elastic bonds (segments), should be set to 1.
-*Radius* is the maximal distance for points when initializing the network.
-*Force_M* is the magnitude of the force dipoles. Range [0.1, 10].
-*Spring* is the spring constant of the elastic bonds. Range [128, 1024].
-*Myo* is the dipoles density. Range [0.1,1.0]
-*Bend* is the bending rigidity of the elastic bonds, should be set to 1.
-*Outer* **enelever!!!**
-*Ratio* is the ratio between the given contour file and the created system. All length will be divided by this value.
-*Persist* **enlever**
-*AnchorRatio* is the fraction of lattice nodes that are not fixed. Range [0.95-0.99]
-*Matrix* Coordinates defining the lattice unit cell. This shouldn't be changed
-*Reference* Reference of the run, the parameters will automatically be added.
-*Cell* Initial outline file. There is a sample outline available on the repository.
+* *Link* is the network density. Range [0.5,1.0].
+* *Rest* is the rest length of the elastic bonds (segments), should be set to 1.
+* *Radius* is the maximal distance for points when initializing the network.
+* *Force_M* is the magnitude of the force dipoles. Range [0.1, 10].
+* *Spring* is the spring constant of the elastic bonds. Range [128, 1024].
+* *Myo* is the dipoles density. Range [0.1,1.0]
+* *Bend* is the bending rigidity of the elastic bonds, should be set to 1.
+* *Outer* **enelever!!!**
+* *Ratio* is the ratio between the given contour file and the created system. All length will be divided by this value.
+* *Persist* **enlever**
+* *AnchorRatio* is the fraction of lattice nodes that are not fixed. Range [0.95-0.99]
+* *Matrix* Coordinates defining the lattice unit cell. This shouldn't be changed
+* *Reference* Reference of the run, the parameters will automatically be added.
+* *Cell* Initial outline file. There is a sample outline available on the repository.
 
 **Precisions:**
 The *Cell* file contains the positions of the vectices of a polygon. Each line contains the coordinates of one point, the coordinates are separated by a single space.

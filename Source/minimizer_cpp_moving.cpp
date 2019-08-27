@@ -44,15 +44,15 @@ int main(int argc, char* argv[]){
 	}
 	ofile.close();
 	
-	//just the lattice
-	ofile.open(pathname.str()+"_network.dat", ofstream::out);
-	cerr << "printing network.dat" << endl;
-	for(unsigned int i(0); i<sys->get_hinges_size(); i++){
-		ofile << sys->get_point(sys->get_hinge_point(i,0),0) << "\t" << sys->get_point(sys->get_hinge_point(i,0), 1) << endl;
-		ofile << sys->get_point(sys->get_hinge_point(i,1),0) << "\t" << sys->get_point(sys->get_hinge_point(i,1), 1) << endl;
-		ofile << sys->get_point(sys->get_hinge_point(i,2),0) << "\t" << sys->get_point(sys->get_hinge_point(i,2), 1) << endl;
-	}
-	ofile.close();
+	////just the lattice
+	//ofile.open(pathname.str()+"_network.dat", ofstream::out);
+	//cerr << "printing network.dat" << endl;
+	//for(unsigned int i(0); i<sys->get_hinges_size(); i++){
+		//ofile << sys->get_point(sys->get_hinge_point(i,0),0) << "\t" << sys->get_point(sys->get_hinge_point(i,0), 1) << endl;
+		//ofile << sys->get_point(sys->get_hinge_point(i,1),0) << "\t" << sys->get_point(sys->get_hinge_point(i,1), 1) << endl;
+		//ofile << sys->get_point(sys->get_hinge_point(i,2),0) << "\t" << sys->get_point(sys->get_hinge_point(i,2), 1) << endl;
+	//}
+	//ofile.close();
 	
 	//positions of outpoints
 	ofile.open(pathname.str()+"_outpoints.dat", ofstream::out);
@@ -222,8 +222,8 @@ int main(int argc, char* argv[]){
 		//}
 	//}
 	
-	string dip_density_path(pathname.str()+"_dipoles_density.dat");
-	sys->plot_dipoles_density(s->x, 5, dip_density_path);
+	//string dip_density_path(pathname.str()+"_dipoles_density.dat");
+	//sys->plot_dipoles_density(s->x, 5, dip_density_path);
 	
 	cerr << "done printing the system" << endl;
 	

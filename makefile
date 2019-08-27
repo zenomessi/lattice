@@ -17,7 +17,7 @@ OBJ10 = $(addprefix $(OBJFOLD),lattice_cell_cpp.o parseur_cpp.o system_general_c
 $(OBJFOLD)%.o: $(SRCFOLD)%.cpp
 	$(CC) $(INC) $(CPPFLAGS) $^ -c -o $@
 
-test: $(OBJ10)
+lattice: $(OBJ10)
 	$(CC) $(INC) -O3 -L/usr/local/lib/ $(CPPFLAGS) $^ -static -o $@ $(LDLIBS)
 
 cell2.o: $(HEADFOLD)cell2.hpp $(SRCFOLD)cell2.cpp
