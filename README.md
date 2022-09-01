@@ -50,5 +50,5 @@ along with the principal parameters of the run. Here's a short description of th
 * *state_final* same as *state_debut* but for final positions.
 
 
-For any question concerning this program write to zeno.messi@epfl.ch.
+For any question concerning this program write to zeno.messi@messi.ch.
 
